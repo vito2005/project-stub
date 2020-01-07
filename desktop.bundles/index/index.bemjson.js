@@ -8,8 +8,8 @@ module.exports = {
     favicon: '/favicon.ico',
     head: [
         { elem: 'meta', attrs: { name: 'description', content: '' }},
-        { elem: 'css', url: 'index.min.css' }
+        { elem: 'css', url: 'style.css' }
     ],
-    scripts: [{ elem: 'js', url: 'index.min.js' }],
+    scripts: [{ elem: 'js', url: 'script.js' }],
     ...bemjson
 }

@@ -43,7 +43,7 @@ const builder = Builder({
         'node_modules/bem-components/design/common.blocks',
         'node_modules/bem-components/design/desktop.blocks',
         'common.blocks',
-        'desktop.blocks'
+        'content.blocks'
     ],
     techMap: {
         bemhtml: ['bemhtml.js'],
@@ -76,7 +76,7 @@ gulp.task('build', () => {
                         autoprefixer(),
                         postcssReporter()
                     ]))
-                    .pipe(concat(bundle.name + '.min.css'))
+                    .pipe(concat('style.css'))
                     .pipe(gulpif(isProd, csso())),
             js: bundle =>
                 merge(
@@ -85,13 +85,13 @@ gulp.task('build', () => {
                     bundle.src('js').pipe(filter(file => file.tech === 'bemhtml.js'))
                         .pipe(concat('browser.bemhtml.js')).pipe(bemhtml({ elemJsInstances: true, exportName: 'BEMHTML' }))
                 )
-                    .pipe(concat(bundle.name + '.min.js'))
+                    .pipe(concat('script.js'))
                     .pipe(gulpif(isProd, uglify())),
             tmpls: bundle =>
                 bundle.src('bemhtml')
                     .pipe(concat('any.bemhtml.js'))
                     .pipe(bemhtml({ elemJsInstances: true }))
-                    .pipe(concat(bundle.name + '.bemhtml.js')),
+                    .pipe(concat('script.bemhtml.js')),
             html: bundle => {
                 const bemhtmlApply = () => toHtml(bundle.target('tmpls'));
                 return gulp.src(bundle.dirname + '/*.bemjson.js')
@@ -100,7 +100,7 @@ gulp.task('build', () => {
        }))
        .on('error', console.error)
        .pipe(debug())
-       .pipe(gulp.dest(file => path.dirname(file.path)));
+       .pipe(gulp.dest('build/'));
 });
 
 gulp.task('default', gulp.series('build'));
