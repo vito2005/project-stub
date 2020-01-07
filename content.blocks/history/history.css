@@ -1,0 +1,38 @@
+.history {
+    border: 3px solid;
+}
+.history .history__info {
+    width: 100%;
+}
+.history .history__hide {
+    display: none;
+}
+.history__transaction.list__item {
+flex-direction: column;
+}
+.history__transaction.list__item_border_bottom {
+    border-bottom: 3px solid;
+}
+.history__transaction.list__item_border_bottom:last-child {
+    border-bottom: 0px;
+}
+.history__show.list__item_indent-t_m {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.history__show .history__details {
+    display: flex;
+    align-items: center;
+}
+.history__details .history__destination {
+    display: inherit;
+    align-items: inherit;
+}
+.history__info .history__description.list__item {
+    display: block;
+}
+.history__actions.list__item_indent-b_l {
+    margin-bottom: 0;
+}

@@ -1,0 +1,22 @@
+.payment {
+    border: 3px solid;
+}
+.payment__content {
+    flex-direction: column;
+}
+.payment__footer .form__control {
+    display: flex;
+    justify-content: flex-end;
+}
+.payment__header .text_size_xxl .text__word {
+    margin-left: 0px;
+}
+.payment__header.form__header {
+    border-bottom: 3px solid;
+    padding-bottom: calc(var(--space-l) * 1px);
+}
+.payment__content.form__content.form__item_space-v_xxxl {
+    border-bottom: 3px solid;
+    margin-bottom: 0;
+    padding-bottom: calc(var(--space-m) * 1px);
+}

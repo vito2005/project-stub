@@ -1,0 +1,20 @@
+.event {
+    min-height: 400px;
+}
+.event__preview {
+    display: flex;
+    margin-bottom: calc(var(--space-xxl)*1px);
+}
+
+.event__preview .brand-logo {
+    margin: 0 calc(var(--space-xs)*1px);;
+}
+
+.event__title {
+    margin-bottom: calc(var(--space-s)*1px);
+}
+.event__footer.card__footer {
+    left: 50%;
+    margin-right: -50%;
+    transform: translateX(-50%);
+}

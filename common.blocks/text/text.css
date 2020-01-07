@@ -1,0 +1,136 @@
+.text {
+
+}
+.text_align_center {
+    text-align: center;
+}
+.text_size_s {
+    font-size: var(--fs-s);
+}
+.text__word {
+    display: inline-block;
+}
+.text_size_s .text__word {
+    height: 8px;
+    margin: 3px 0;
+}
+.text_size_s .text__word_width_s {
+    width: 20px;
+}
+.text_size_s .text__word_width_m {
+    width: 48px;
+}
+.text_size_s .text__word_width_l {
+    width: 100px;
+}
+.text_size_m {
+    font-size: var(--fs-m);
+}
+.text_size_m .text__word {
+    height: 10px;
+    margin: 7.5px 0;
+}
+.text_size_m .text__word_width_s {
+    width: 24px;
+}
+.text_size_m .text__word_width_m {
+    width: 56px;
+}
+.text_size_m .text__word_width_l {
+    width: 114px;
+}
+.text_size_l {
+    font-size: var(--fs-l);
+}
+.text_size_l .text__word {
+    height: 11px;
+    margin: 7px 0;
+}
+.text_size_l .text__word_width_s {
+    width: 28px;
+}
+.text_size_l .text__word_width_m {
+    width: 68px;
+}
+.text_size_l .text__word_width_l {
+    width: 138px;
+}
+.text_size_xl {
+    font-size: var(--fs-xl);
+}
+.text_size_xl .text__word {
+    height: 13px;
+    margin: 9px 0;
+}
+.text_size_xl .text__word_width_s {
+    width: 32px;
+}
+.text_size_xl .text__word_width_m {
+    width: 74px;
+}
+.text_size_xl .text__word_width_l {
+    width: 154px;
+}
+.text_size_xxl {
+    font-size: var(--fs-xxl);
+}
+.text_size_xxl .text__word {
+    height: 16px;
+    margin: 10px;
+}
+.text_size_xxl .text__word_width_s {
+    width: 36px;
+}
+.text_size_xxl .text__word_width_m {
+    width: 88px;
+}
+.text_size_xxl .text__word_width_l {
+    width: 184px;
+}
+
+.text_type_h1 {
+    margin: 18px 0 24px;
+}
+.text_type_h2 {
+    margin: 45px 0 21px;
+}
+.text_type_h3 {
+    margin: 42px 0 0;
+}
+.text_type_p {
+    margin: 15px 0 21px;
+}
+
+.text_view_primary {
+    color: var(--color-text-primary);
+}
+.text_view_primary .text__word {
+    background: var(--color-text-primary);
+}
+.text_view_secondary {
+    color: var(--color-text-secondary);
+}
+.text_view_secondary .text__word {
+    background: var(--color-text-secondary);
+}
+.text_view_ghost {
+    color: var(--color-text-additional);
+}
+.text_view_ghost .text__word {
+    background: var(--color-text-additional);
+}
+.text_view_link {
+    color: var(--color-text-href);
+}
+.text_view_link .text__word {
+    background: var(--color-text-href);
+}
+.text__word_width_s {
+    width: calc(var(--space-s)*1px);
+}
+.text__word_width_m {
+    width: calc(var(--space-m)*1px);
+}
+.text__word_width_l {
+    width: calc(var(--space-l)*1px);
+}

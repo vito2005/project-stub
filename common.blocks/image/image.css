@@ -1,0 +1,12 @@
+.image {
+    width: 100%;
+}
+.theme_color_project-default .image {
+    background: center no-repeat url("/assets/images/image-placeholder-primary.svg"), var(--color-bg-default);
+}
+.theme_color_project-brand .image {
+    background: center no-repeat url("/assets/images/image-placeholder-inverse.svg"), var(--color-bg-default);
+}
+.theme_color_project-inverse .image {
+    background: center no-repeat url("/assets/images/image-placeholder-inverse.svg"), var(--color-bg-default);
+}
