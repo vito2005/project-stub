@@ -40,7 +40,8 @@ const techs = {
         { path: 'node_modules/bem-components/design/common.blocks', check: false },
         { path: 'node_modules/bem-components/design/desktop.blocks', check: false },
         'common.blocks',
-        'desktop.blocks'
+        'desktop.blocks',
+        'content.blocks'
     ];
 
 module.exports = function(config) {
