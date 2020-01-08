@@ -36,3 +36,9 @@ flex-direction: column;
 .history__actions.list__item_indent-b_l {
     margin-bottom: 0;
 }
+.history__details .history__label.text_size_l .text__word {
+    margin: 0;
+}
+.history__quantity .text_size_l .text__word {
+    margin: 0;
+}

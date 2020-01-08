@@ -78,12 +78,8 @@ gulp.task('build', () => {
                     ]))
                     .pipe(concat('style.css'))
                     .pipe(gulpif(isProd, csso())),
-            js: bundle =>
-                merge(
-                    gulp.src(pathToYm),
-                    bundle.src('js').pipe(filter(file => file.tech === 'bemhtml.js'))
-                        .pipe(concat('browser.bemhtml.js')).pipe(bemhtml({ elemJsInstances: true, exportName: 'BEMHTML' }))
-                )
+            js: () =>
+                    gulp.src('desktop.bundles/index/index.js')
                     .pipe(concat('script.js'))
                     .pipe(gulpif(isProd, uglify())),
             tmpls: bundle =>

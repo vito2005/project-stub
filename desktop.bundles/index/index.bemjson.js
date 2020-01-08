@@ -13,3 +13,4 @@ module.exports = {
     scripts: [{ elem: 'js', url: 'script.js' }],
     ...bemjson
 }
+
