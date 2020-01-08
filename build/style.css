@@ -391,7 +391,7 @@
 }
 .text_size_xxl .text__word {
     height: 16px;
-    margin: 10px;
+    margin: 9.5px;
 }
 .text_size_xxl .text__word_width_s {
     width: 36px;
@@ -1013,15 +1013,19 @@ margin-bottom: calc(var(--space-xl) * 1px);
 
 .event {
     min-height: 400px;
+    width: 100%;
 }
 .event__preview {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-bottom: calc(var(--space-xxl) * 1px);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
-.event__preview .brand-logo {
-    margin: 0 calc(var(--space-xs) * 1px);;
+.event__preview .event__speaker {
+    margin-right: calc(var(--space-xs) * 1px);
 }
 .event__title {
     margin-bottom: calc(var(--space-s) * 1px);

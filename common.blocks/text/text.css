@@ -76,7 +76,8 @@
 }
 .text_size_xxl .text__word {
     height: 16px;
-    margin: 9.5px;
+    margin-top: 8px;
+    margin-bottom: 14px;
 }
 .text_size_xxl .text__word_width_s {
     width: 36px;
