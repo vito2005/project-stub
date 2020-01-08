@@ -1,14 +1,17 @@
 .event {
     min-height: 400px;
+    width: 100%;
 }
 .event__preview {
     display: flex;
     margin-bottom: calc(var(--space-xxl)*1px);
+    justify-content: center;
 }
 
-.event__preview .brand-logo {
-    margin: 0 calc(var(--space-xs)*1px);;
+.event__preview .event__speaker {
+    margin-right: calc(var(--space-xs)*1px);
 }
+
 
 .event__title {
     margin-bottom: calc(var(--space-s)*1px);
