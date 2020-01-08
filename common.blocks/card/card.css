@@ -18,7 +18,6 @@
     justify-content: center;
 }
 .card__content_vertical-align_center {
-    vertical-align: center;
     align-items: center;
 }
 .card__content_space-a_m {

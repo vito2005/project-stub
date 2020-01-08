@@ -21,3 +21,6 @@
     margin-right: -50%;
     transform: translateX(-50%);
 }
+.event .event__content {
+    justify-content: normal;
+}
