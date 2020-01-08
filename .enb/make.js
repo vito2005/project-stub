@@ -57,7 +57,7 @@ module.exports = function(config) {
 
             // css
             [techs.postcss, {
-                target: '?.css',
+                target: 'style.css',
                 oneOfSourceSuffixes: ['post.css', 'css'],
                 plugins: techs.postcssPlugins
             }],
@@ -100,15 +100,15 @@ module.exports = function(config) {
             // js
             [techs.browserJs, { includeYM: true }],
             [techs.fileMerge, {
-                target: '?.js',
-                sources: ['?.browser.js', '?.browser.bemhtml.js']
+                target: 'script.js',
+                sources: ['?.browser.bemhtml.js']
             }],
 
             // borschik
-            [techs.borschik, { source: '?.js', target: '?.min.js', minify: isProd }],
-            [techs.borschik, { source: '?.css', target: '?.min.css', minify: isProd }]
+            [techs.borschik, { source: 'script.js', target: 'script.min.js', minify: isProd }],
+            [techs.borschik, { source: 'style.css', target: 'style.min.css', minify: isProd }]
         ]);
 
-        nodeConfig.addTargets([/* '?.bemtree.js', */ '?.html', '?.min.css', '?.min.js']);
+        nodeConfig.addTargets([/* '?.bemtree.js', */ '?.html', 'style.min.css', 'script.min.js']);
     });
 };

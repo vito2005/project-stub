@@ -81,7 +81,6 @@ gulp.task('build', () => {
             js: bundle =>
                 merge(
                     gulp.src(pathToYm),
-                    bundle.src('js').pipe(filter(f => ~['vanilla.js', 'browser.js', 'js'].indexOf(f.tech))),
                     bundle.src('js').pipe(filter(file => file.tech === 'bemhtml.js'))
                         .pipe(concat('browser.bemhtml.js')).pipe(bemhtml({ elemJsInstances: true, exportName: 'BEMHTML' }))
                 )
