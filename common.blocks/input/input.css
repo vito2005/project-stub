@@ -1,13 +1,9 @@
 .input {
-}
-.input .input__box {
-    display: flex;
-}
-.input__box .input__control {
-    width: 100%;
-    border: 3px solid;
+    border: 0;
     padding: 0;
-    margin: 0;
+    flex-grow: 1;
+    border: 3px solid var(--color-bg-border);
+    box-sizing: border-box;
 }
 .input_size_s .input__control {
     height: 18px;
@@ -15,8 +11,8 @@
 .input_size_m {
     height: 26px;
 }
-.input_size_l .input__control {
-    height: 36px;
+.input_size_l {
+    height: 42px;
 }
 .input_size_xl {
     height: 56px;

@@ -1,5 +1,6 @@
 .payment {
     border: 3px solid;
+    box-sizing: border-box;
 }
 .payment__content {
     flex-direction: column;
@@ -9,14 +10,23 @@
     justify-content: flex-end;
 }
 .payment__header .text_size_xxl .text__word {
-    margin-left: 0px;
+    margin-left: 0;
+    margin-top: 8px;
+    margin-bottom: 10px;
 }
 .payment__header.form__header {
-    border-bottom: 3px solid;
     padding-bottom: calc(var(--space-l) * 1px);
 }
-.payment__content.form__content.form__item_space-v_xxxl {
-    border-bottom: 3px solid;
+.payment__content .form__item_space-v_xxxl {
+    padding-top: var(--space-xxxl);
+    padding-bottom: var(--space-xxxl);
+}
+.payment__content .text_size_l .text__word {
+    margin: 8px 0 10px 0;
+}
+.payment__content .form__item_indent-b_xl:last-child {
     margin-bottom: 0;
-    padding-bottom: calc(var(--space-m) * 1px);
+}
+.payment__footer .text_size_l .text__word {
+    margin: 8px 0 10px 0;
 }

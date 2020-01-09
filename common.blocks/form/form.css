@@ -104,13 +104,11 @@
     border-bottom: none;
 }
 .form__item_space-v_l {
-    margin-top: calc(var(--space-l)*1px);
-    margin-bottom: calc(var(--space-l)*1px);
-    border-bottom: none;
+    padding-top: calc(var(--space-l)*1px);
+    padding-bottom: calc(var(--space-l)*1px);
 }
 .form__item_space-v_xl {
     margin-top: calc(var(--space-xl)*1px);
-    margin-bottom: calc(var(--space-xl)*1px);
     border-bottom: none;
 }
 .form__item_space-v_xxl {
@@ -119,20 +117,26 @@
     border-bottom: none;
 }
 .form__item_space-v_xxxl {
-    margin-top: calc(var(--space-xxxl)*1px);
-    margin-bottom: calc(var(--space-xxxl)*1px);
-    border-bottom: none;
+    padding-top: calc(var(--space-xxxl)*1px);
+    padding-bottom: calc(var(--space-xxxl)*1px);
 }
 .form__item_space-v_xxxxl {
     margin-top: calc(var(--space-xxxxl)*1px);
     margin-bottom: calc(var(--space-xxxxl)*1px);
     border-bottom: none;
 }
-
+.form__label {
+    display: flex;
+}
 .form__label_width_default {
     width: 35%;
 }
 .form__item .form__control {
     flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.form__item_border_bottom {
+    border-bottom: 3px solid var(--color-bg-border);
 }
 

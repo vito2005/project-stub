@@ -35,10 +35,6 @@ const techs = {
     levels = [
         { path: 'node_modules/bem-core/common.blocks', check: false },
         { path: 'node_modules/bem-core/desktop.blocks', check: false },
-        { path: 'node_modules/bem-components/common.blocks', check: false },
-        { path: 'node_modules/bem-components/desktop.blocks', check: false },
-        { path: 'node_modules/bem-components/design/common.blocks', check: false },
-        { path: 'node_modules/bem-components/design/desktop.blocks', check: false },
         'common.blocks',
         'content.blocks'
     ];
@@ -99,10 +95,10 @@ module.exports = function(config) {
 
             // js
             [techs.browserJs, { includeYM: true }],
-            [techs.fileMerge, {
-                target: 'script.js',
-                sources: ['?.browser.bemhtml.js']
-            }],
+            // [techs.fileMerge, {
+            //     target: 'script.js',
+            //     sources: ['?.browser.bemhtml.js']
+            // }],
 
             // borschik
             [techs.borschik, { source: 'script.js', target: 'script.min.js', minify: isProd }],
