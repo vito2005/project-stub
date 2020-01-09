@@ -91,8 +91,8 @@
 
 .header {
     margin: 0 calc(var(--gap) * 1px);
-    padding-top: var(--space-xxxl);
-    margin-bottom: var(--space-xxxl);
+    padding-top: calc(var(--space-xxxl) * 1px);
+    margin-bottom: calc(var(--space-xxxl) * 1px);
 }
 .header__content {
     display: -webkit-box;
