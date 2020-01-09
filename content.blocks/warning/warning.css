@@ -17,3 +17,9 @@
 .warning__button-wrapper {
     margin-top: 4px;
 }
+@media (max-width: 1024px) {
+    .warning__button-wrapper.informer__action_space-a_xl {
+        padding-top: 41px;
+
+    }
+}
