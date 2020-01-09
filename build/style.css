@@ -90,7 +90,7 @@
 }
 
 .header {
-    margin: calc(var(--gap) * 1px) calc(var(--space-xxxl) * 1px);
+    margin: calc(var(--space-xxxl) * 1px) calc(var(--gap) * 1px);
 }
 .header__content {
     display: -webkit-box;
