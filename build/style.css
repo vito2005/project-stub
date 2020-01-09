@@ -234,6 +234,9 @@
         -ms-flex-align: center;
             align-items: center;
 }
+.warning__content .text_size_xl {
+    font-size: 0;
+}
 .warning__button-wrapper {
     margin-top: 4px;
 }
