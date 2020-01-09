@@ -2,7 +2,7 @@
     min-height: 294px;
     border: 3px solid;
 }
-.product img {
+.product {
     height: 160px;
 }
 .product.card {
@@ -13,4 +13,8 @@
 }
 .product__footer.card__footer {
     flex-direction: column;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
