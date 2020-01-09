@@ -8,7 +8,7 @@
 .product.card {
     border: 3px solid;
 }
-.product__image {
+.product__image .image {
     height: 160px;
 }
 .product__footer.card__footer {

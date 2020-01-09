@@ -334,6 +334,8 @@
 }
 .text_size_s .text__word_width_m {
     width: 48px;
+    margin-top: 10px;
+    margin-bottom: 3px;
 }
 .text_size_s .text__word_width_l {
     width: 100px;
@@ -343,7 +345,8 @@
 }
 .text_size_m .text__word {
     height: 10px;
-    margin: 7.5px 0;
+    margin-top: 10px;
+    margin-bottom: 2px;
 }
 .text_size_m .text__word_width_s {
     width: 24px;
@@ -717,7 +720,7 @@
 .product.card {
     border: 3px solid;
 }
-.product__image {
+.product__image .image {
     height: 160px;
 }
 .product__footer.card__footer {
