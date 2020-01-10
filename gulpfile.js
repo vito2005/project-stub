@@ -36,12 +36,6 @@ const pathToYm = require.resolve('ym');
 
 const builder = Builder({
     levels: [
-        'node_modules/bem-core/common.blocks',
-        'node_modules/bem-core/desktop.blocks',
-        'node_modules/bem-components/common.blocks',
-        'node_modules/bem-components/desktop.blocks',
-        'node_modules/bem-components/design/common.blocks',
-        'node_modules/bem-components/design/desktop.blocks',
         'common.blocks',
         'content.blocks'
     ],
