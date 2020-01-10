@@ -1,3 +1,28 @@
 .cover {
     min-height: 472px;
+    box-sizing: border-box;
+}
+.cover .image {
+    height: 180px;
+    border: 3px solid var(--color-bg-border);
+    box-sizing: border-box;
+
+}
+.cover__preview {
+    margin-bottom: calc(var(--space-l)*1px);
+}
+.cover .cover__footer {
+    margin-top: 6px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.cover__info {
+    display: flex;
+    flex-direction: column;
+}
+.cover .text_size_xxl .text__word {
+    height: 16px;
+    margin-top: 8px;
+    margin-bottom: 10px;
 }
