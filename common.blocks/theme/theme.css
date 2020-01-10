@@ -2,16 +2,6 @@
     box-sizing: border-box;
 }
 
-@media (max-width: 1024px) {
-    .theme {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    .theme_gap_small {
-        --gap: var(--space-s);
-    }
-}
-
 .theme_color_project-default {
     --color-bg-default: #f7f7f7;
     --color-bg-accent: #ffcc00;
@@ -85,4 +75,13 @@
 
 .theme_gap_small {
  --gap: var(--space-xl);
+}
+@media (max-width: 1024px) {
+    .theme {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .theme_gap_small {
+        --gap: var(--space-s)
+    }
 }
