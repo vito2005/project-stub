@@ -2413,6 +2413,28 @@ block('page').elem('js')(
     })
 );
 
+block('image')(
+    addAttrs()({ role : 'img' }),
+
+    tag()('span'),
+
+    match(function() { return typeof this.ctx.content === 'undefined'; })(
+        tag()('img'),
+        addAttrs()(function() {
+            var ctx = this.ctx;
+            return this.extend(applyNext(),
+                {
+                    role : undefined,
+                    src : ctx.url,
+                    width : ctx.width,
+                    height : ctx.height,
+                    alt : ctx.alt,
+                    title : ctx.title
+                });
+        })
+    )
+);
+
 block('button')(
     def()(function() {
         var tag = apply('tag'),
@@ -2478,37 +2500,6 @@ block('button')(
     )
 );
 
-block('input')(
-    tag()('span'),
-    addJs()(true),
-    def()(function() {
-        return applyNext({ _input : this.ctx });
-    }),
-    content()({ elem : 'box', content : { elem : 'control' } })
-);
-
-block('image')(
-    addAttrs()({ role : 'img' }),
-
-    tag()('span'),
-
-    match(function() { return typeof this.ctx.content === 'undefined'; })(
-        tag()('img'),
-        addAttrs()(function() {
-            var ctx = this.ctx;
-            return this.extend(applyNext(),
-                {
-                    role : undefined,
-                    src : ctx.url,
-                    width : ctx.width,
-                    height : ctx.height,
-                    alt : ctx.alt,
-                    title : ctx.title
-                });
-        })
-    )
-);
-
 block('ua')(
     tag()('script'),
     bem()(false),
@@ -2524,29 +2515,6 @@ block('button').mod('focused', true).js()(function() {
 });
 
 block('button').elem('text').tag()('span');
-
-block('input').elem('box').tag()('span');
-
-block('input').elem('control')(
-    tag()('input'),
-
-    addAttrs()(function() {
-        var input = this._input,
-            attrs = {
-                id : input.id,
-                name : input.name,
-                value : input.val,
-                maxlength : input.maxLength,
-                tabindex : input.tabIndex,
-                placeholder : input.placeholder
-            };
-
-        input.autocomplete === false && (attrs.autocomplete = 'off');
-        this.mods.disabled && (attrs.disabled = 'disabled');
-
-        return attrs;
-    })
-);
 ;
 ;oninit(function(exports, context) {
 var BEMContext = exports.BEMContext || context.BEMContext;
