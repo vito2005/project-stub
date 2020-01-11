@@ -151,6 +151,9 @@
 .layout__container_indent-b_xxxxl {
     margin-bottom: calc(var(--space-xxxxl) * 1px);
 }
+.layout__container.theme_color_project-inverse {
+    background: var(--color-bg-default);
+}
 
 .section {
 

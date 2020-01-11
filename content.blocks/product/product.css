@@ -7,7 +7,7 @@
     height: 160px;
 }
 .product.card {
-    border: 3px solid;
+    border: 3px solid var(--color-bg-border);
 }
 .product__image .image {
     height: 160px;
