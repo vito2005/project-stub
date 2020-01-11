@@ -95,10 +95,10 @@ module.exports = function(config) {
 
             // js
             [techs.browserJs, { includeYM: true }],
-            // [techs.fileMerge, {
-            //     target: 'script.js',
-            //     sources: ['?.browser.bemhtml.js']
-            // }],
+            [techs.fileMerge, {
+                target: 'script.js',
+                sources: ['?.browser.bemhtml.js']
+            }],
 
             // borschik
             [techs.borschik, { source: 'script.js', target: 'script.min.js', minify: isProd }],

@@ -8,6 +8,7 @@ const debug = require('gulp-debug');
 const filter = require('through2-filter').obj;
 const merge = require('merge2');
 const concat = require('gulp-concat');
+var concatCss = require('gulp-concat-css');
 const gulpif = require('gulp-if');
 const gulpOneOf = require('gulp-one-of');
 const uglify = require('gulp-uglify');
@@ -70,7 +71,7 @@ gulp.task('build', () => {
                         autoprefixer(),
                         postcssReporter()
                     ]))
-                    .pipe(concat('style.css'))
+                    .pipe(concat(bundle.name + '.css'))
                     .pipe(gulpif(isProd, csso())),
             js: () =>
                     gulp.src('desktop.bundles/index/index.js')
@@ -89,7 +90,8 @@ gulp.task('build', () => {
         }))
        .on('error', console.error)
        .pipe(debug())
-       .pipe(gulp.dest('build/'));
+       .pipe(gulp.src('build/*.css').pipe(concatCss("style.css")))
+       .pipe(gulp.dest('build/'))
 });
 
 gulp.task('default', gulp.series('build'));
