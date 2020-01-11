@@ -43,4 +43,25 @@
 .grid_row-gap_half {
     grid-row-gap: calc(var(--gap)/2*1px);
 }
-
+.grid__fraction_m-col_8 .text_size_xxl .text__word {
+    height: 16px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+.grid__fraction_m-col_8 .text_size_m {
+    line-height: 0;
+}
+.grid__fraction_m-col_8 .text_size_m .text__word {
+    height: 10px;
+    margin-top: 8px;
+    margin-bottom: 7px;
+}
+.grid__fraction_m-col_8 .text_size_xl {
+    font-size: 0;
+}
+.grid__fraction_m-col_8 .text_size_xl {
+    font-size: 0;
+}
+.grid__fraction_m-col_8 .text_size_xxl {
+    font-size: 0;
+}

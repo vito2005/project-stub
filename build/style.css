@@ -234,7 +234,28 @@
 .grid_row-gap_half {
     grid-row-gap: calc(var(--gap) / 2 * 1px);
 }
-
+.grid__fraction_m-col_8 .text_size_xxl .text__word {
+    height: 16px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+.grid__fraction_m-col_8 .text_size_m {
+    line-height: 0;
+}
+.grid__fraction_m-col_8 .text_size_m .text__word {
+    height: 10px;
+    margin-top: 8px;
+    margin-bottom: 7px;
+}
+.grid__fraction_m-col_8 .text_size_xl {
+    font-size: 0;
+}
+.grid__fraction_m-col_8 .text_size_xl {
+    font-size: 0;
+}
+.grid__fraction_m-col_8 .text_size_xxl {
+    font-size: 0;
+}
 
 .warning {
     min-height: 335px;
@@ -367,7 +388,7 @@
     width: 100px;
 }
 .text_size_m {
-    line-height: 0;
+    font-size: var(--fs-m);
 }
 .text_size_m .text__word {
     height: 10px;
@@ -400,7 +421,7 @@
     width: 138px;
 }
 .text_size_xl {
-    font-size: 0;
+    font-size: var(--fs-xl);
 }
 .text_size_xl .text__word {
     height: 13px;
@@ -417,7 +438,7 @@
     width: 154px;
 }
 .text_size_xxl {
-    font-size: 0;
+    font-size: var(--fs-xxl);
 }
 .text_size_xxl .text__word {
     height: 16px;
@@ -1364,7 +1385,28 @@ margin-bottom: calc(var(--space-xl) * 1px);
 .grid_row-gap_half {
     grid-row-gap: calc(var(--gap) / 2 * 1px);
 }
-
+.grid__fraction_m-col_8 .text_size_xxl .text__word {
+    height: 16px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+.grid__fraction_m-col_8 .text_size_m {
+    line-height: 0;
+}
+.grid__fraction_m-col_8 .text_size_m .text__word {
+    height: 10px;
+    margin-top: 8px;
+    margin-bottom: 7px;
+}
+.grid__fraction_m-col_8 .text_size_xl {
+    font-size: 0;
+}
+.grid__fraction_m-col_8 .text_size_xl {
+    font-size: 0;
+}
+.grid__fraction_m-col_8 .text_size_xxl {
+    font-size: 0;
+}
 
 .cover {
     min-height: 472px;
@@ -1400,12 +1442,6 @@ margin-bottom: calc(var(--space-xl) * 1px);
         -ms-flex-direction: column;
             flex-direction: column;
 }
-.cover .text_size_xxl .text__word {
-    height: 16px;
-    margin-top: 8px;
-    margin-bottom: 10px;
-}
-
 .card {
     position: relative;
 }
@@ -1541,7 +1577,7 @@ padding: calc(var(--space-xxl) * 1px);
     width: 100px;
 }
 .text_size_m {
-    line-height: 0;
+    font-size: var(--fs-m);
 }
 .text_size_m .text__word {
     height: 10px;
@@ -1574,7 +1610,7 @@ padding: calc(var(--space-xxl) * 1px);
     width: 138px;
 }
 .text_size_xl {
-    font-size: 0;
+    font-size: var(--fs-xl);
 }
 .text_size_xl .text__word {
     height: 13px;
@@ -1591,7 +1627,7 @@ padding: calc(var(--space-xxl) * 1px);
     width: 154px;
 }
 .text_size_xxl {
-    font-size: 0;
+    font-size: var(--fs-xxl);
 }
 .text_size_xxl .text__word {
     height: 16px;
