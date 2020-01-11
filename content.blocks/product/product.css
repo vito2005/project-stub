@@ -25,3 +25,7 @@
     flex-direction: column;
     justify-content: flex-end;
 }
+.product__title {
+    margin-bottom: calc(var(--space-xxxl)*1px);
+    width: 100%;
+}
