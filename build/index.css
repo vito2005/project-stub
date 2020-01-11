@@ -154,6 +154,11 @@
 .layout__container.theme_color_project-inverse {
     background: var(--color-bg-default);
 }
+@media (max-width: 1024px) {
+    .layout__container_align_center {
+        margin: 0;
+    }
+}
 
 .section {
 

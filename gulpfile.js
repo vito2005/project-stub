@@ -8,7 +8,6 @@ const debug = require('gulp-debug');
 const filter = require('through2-filter').obj;
 const merge = require('merge2');
 const concat = require('gulp-concat');
-var concatCss = require('gulp-concat-css');
 const gulpif = require('gulp-if');
 const gulpOneOf = require('gulp-one-of');
 const uglify = require('gulp-uglify');
@@ -46,6 +45,10 @@ const builder = Builder({
         css: ['post.css', 'css']
     }
 });
+gulp.task('concat-css', () => {
+return gulp.src('build/*.css').pipe(concat("style.css"))
+.pipe(gulp.dest('build/'))
+})
 
 gulp.task('build', () => {
     return bundler('*.bundles/*')
@@ -90,8 +93,7 @@ gulp.task('build', () => {
         }))
        .on('error', console.error)
        .pipe(debug())
-       .pipe(gulp.src('build/*.css').pipe(concatCss("style.css")))
        .pipe(gulp.dest('build/'))
 });
 
-gulp.task('default', gulp.series('build'));
+gulp.task('default', gulp.series('build', 'concat-css'));
