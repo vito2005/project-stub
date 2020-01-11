@@ -356,9 +356,6 @@
 .text_size_s .text__word_width_l {
     width: 100px;
 }
-.text_size_m {
-    font-size: var(--fs-m);
-}
 .text_size_m .text__word {
     height: 10px;
     margin-top: 10px;
@@ -1519,9 +1516,6 @@ padding: calc(var(--space-xxl) * 1px);
 }
 .text_size_s .text__word_width_l {
     width: 100px;
-}
-.text_size_m {
-    font-size: var(--fs-m);
 }
 .text_size_m .text__word {
     height: 10px;
