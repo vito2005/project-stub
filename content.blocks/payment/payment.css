@@ -17,6 +17,9 @@
 .payment__header.form__header {
     padding-bottom: calc(var(--space-l) * 1px);
 }
+.payment__header .text_size_xxl {
+    font-size: var(--fs-xxl);
+}
 .payment__content .form__item_space-v_xxxl {
     padding-top: var(--space-xxxl);
     padding-bottom: var(--space-xxxl);

@@ -366,7 +366,7 @@
     width: 100px;
 }
 .text_size_m {
-    font-size: var(--fs-m);
+    font-size: 0;
 }
 .text_size_m .text__word {
     height: 10px;
@@ -399,7 +399,7 @@
     width: 138px;
 }
 .text_size_xl {
-    font-size: var(--fs-xl);
+    font-size: 0;
 }
 .text_size_xl .text__word {
     height: 13px;
@@ -416,7 +416,7 @@
     width: 154px;
 }
 .text_size_xxl {
-    font-size: var(--fs-xxl);
+    font-size: 0;
 }
 .text_size_xxl .text__word {
     height: 16px;
@@ -527,6 +527,9 @@
 }
 .payment__header.form__header {
     padding-bottom: calc(var(--space-l) * 1px);
+}
+.payment__header .text_size_xxl {
+    font-size: var(--fs-xxl);
 }
 .payment__content .form__item_space-v_xxxl {
     padding-top: var(--space-xxxl);
@@ -766,6 +769,11 @@
 .product__title {
     margin-bottom: calc(var(--space-xxxl) * 1px);
     width: 100%;
+}
+.product .text_size_m .text__word {
+    height: 10px;
+    margin-top: 10px;
+    margin-bottom: 2px;
 }
 
 .card {
