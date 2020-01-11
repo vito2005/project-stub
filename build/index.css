@@ -104,6 +104,9 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 1280px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .header__logo {
     width: 179px;
@@ -111,18 +114,26 @@
     background: var(--color-text-primary);
 }
 .onoffswitch {
-    width: 93px;
-    height: 28px;
-    border: 2px solid;
-    position: relative;
+    width: 97px;
+    height: 32px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    border: 2px solid var(--color-bg-border);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .onoffswitch__button {
-    height: 24px;
     width: 24px;
+    height: 24px;
+    margin-right: 2px;
     background-color: var(--color-bg-border);
-    position: absolute;
-    right: 0;
-    margin: 2px;
     cursor: pointer;
 }
 
@@ -331,7 +342,6 @@
     background-color: var(--color-text-primary);
 }
 
-
 .text_align_center {
     text-align: center;
 }
@@ -356,10 +366,13 @@
 .text_size_s .text__word_width_l {
     width: 100px;
 }
+.text_size_m {
+    line-height: 0;
+}
 .text_size_m .text__word {
     height: 10px;
-    margin-top: 10px;
-    margin-bottom: 2px;
+    margin-top: 8px;
+    margin-bottom: 7px;
 }
 .text_size_m .text__word_width_s {
     width: 24px;
@@ -387,7 +400,7 @@
     width: 138px;
 }
 .text_size_xl {
-    font-size: var(--fs-xl);
+    font-size: 0;
 }
 .text_size_xl .text__word {
     height: 13px;
@@ -404,7 +417,7 @@
     width: 154px;
 }
 .text_size_xxl {
-    font-size: var(--fs-xxl);
+    font-size: 0;
 }
 .text_size_xxl .text__word {
     height: 16px;

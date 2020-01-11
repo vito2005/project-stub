@@ -104,6 +104,9 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 1280px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .header__logo {
     width: 179px;
@@ -111,18 +114,26 @@
     background: var(--color-text-primary);
 }
 .onoffswitch {
-    width: 93px;
-    height: 28px;
-    border: 2px solid;
-    position: relative;
+    width: 97px;
+    height: 32px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    border: 2px solid var(--color-bg-border);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .onoffswitch__button {
-    height: 24px;
     width: 24px;
+    height: 24px;
+    margin-right: 2px;
     background-color: var(--color-bg-border);
-    position: absolute;
-    right: 0;
-    margin: 2px;
     cursor: pointer;
 }
 
@@ -375,7 +386,6 @@ padding: calc(var(--space-xxl) * 1px);
     background: center no-repeat url("data:image/svg+xml,%3Csvg width='80px' height='64px' viewBox='0 0 80 64' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='image-placeholder' transform='translate(-620.000000, -368.000000)' fill='%23FFFFFF' fill-rule='nonzero'%3E%3Cg id='Group' transform='translate(500.000000, 368.000000)'%3E%3Cg id='placeholder' transform='translate(120.000000, 0.000000)'%3E%3Cpath d='M32,16 L48,16 L48,8 L56,8 L56,16 L64,16 L64,24 L72,24 L72,32 L80,32 L80,48 L72,48 L72,40 L64,40 L64,48 L56,48 L56,56 L48,56 L48,48 L32,48 L32,56 L24,56 L24,48 L16,48 L16,40 L8,40 L8,48 L0,48 L0,32 L8,32 L8,24 L16,24 L16,16 L24,16 L24,8 L32,8 L32,16 Z M24,32 L32,32 L32,24 L24,24 L24,32 Z M16,0 L24,0 L24,8 L16,8 L16,0 Z M16,56 L24,56 L24,64 L16,64 L16,56 Z M56,32 L56,24 L48,24 L48,32 L56,32 Z M64,0 L64,8 L56,8 L56,0 L64,0 Z M64,56 L64,64 L56,64 L56,56 L64,56 Z' id='Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E"), var(--color-bg-default);
 }
 
-
 .text_align_center {
     text-align: center;
 }
@@ -400,10 +410,13 @@ padding: calc(var(--space-xxl) * 1px);
 .text_size_s .text__word_width_l {
     width: 100px;
 }
+.text_size_m {
+    line-height: 0;
+}
 .text_size_m .text__word {
     height: 10px;
-    margin-top: 10px;
-    margin-bottom: 2px;
+    margin-top: 8px;
+    margin-bottom: 7px;
 }
 .text_size_m .text__word_width_s {
     width: 24px;
@@ -431,7 +444,7 @@ padding: calc(var(--space-xxl) * 1px);
     width: 138px;
 }
 .text_size_xl {
-    font-size: var(--fs-xl);
+    font-size: 0;
 }
 .text_size_xl .text__word {
     height: 13px;
@@ -448,7 +461,7 @@ padding: calc(var(--space-xxl) * 1px);
     width: 154px;
 }
 .text_size_xxl {
-    font-size: var(--fs-xxl);
+    font-size: 0;
 }
 .text_size_xxl .text__word {
     height: 16px;

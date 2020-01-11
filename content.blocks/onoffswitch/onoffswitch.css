@@ -1,15 +1,16 @@
 .onoffswitch {
-    width: 93px;
-    height: 28px;
-    border: 2px solid;
-    position: relative;
+    width: 97px;
+    height: 32px;
+    justify-content: flex-end;
+    border: 2px solid var(--color-bg-border);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
 }
 .onoffswitch__button {
-    height: 24px;
     width: 24px;
+    height: 24px;
+    margin-right: 2px;
     background-color: var(--color-bg-border);
-    position: absolute;
-    right: 0;
-    margin: 2px;
     cursor: pointer;
 }
