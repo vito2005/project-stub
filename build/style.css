@@ -1111,6 +1111,13 @@ margin-bottom: calc(var(--space-xl) * 1px);
         -ms-flex-pack: normal;
             justify-content: normal;
 }
+.event .text_size_l .text__word {
+    height: 11px;
+    margin: 8px 0 9px 0;
+}
+.event .text_size_l {
+    font-size: 0;
+}
 
 .avatar {
     background-color: var(--color-text-primary);
@@ -1405,11 +1412,6 @@ margin-bottom: calc(var(--space-xl) * 1px);
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-}
-.cover .text_size_xxl .text__word {
-    height: 16px;
-    margin-top: 8px;
-    margin-bottom: 10px;
 }
 .card {
     position: relative;

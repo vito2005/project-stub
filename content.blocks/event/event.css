@@ -24,3 +24,10 @@
 .event .event__content {
     justify-content: normal;
 }
+.event .text_size_l .text__word {
+    height: 11px;
+    margin: 8px 0 9px 0;
+}
+.event .text_size_l {
+    font-size: 0;
+}
